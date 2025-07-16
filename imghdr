@@ -1,0 +1,4 @@
+from PIL import Image
+def get_image_type(image_path):
+    with Image.open(image_path) as img:
+        return img.format
